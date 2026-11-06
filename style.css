@@ -1681,8 +1681,8 @@ td {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 0 12px;
         padding: 10px 12px;
-        background: #fff;
-        border: 1px solid #eff0f5;
+        background: hsl(var(--category-hue) 75% 98%);
+        border: 1px solid hsl(var(--category-hue) 55% 89%);
         border-radius: 10px;
     }
 
@@ -1712,6 +1712,30 @@ td {
         padding: 4px 0 0;
         border-top: 1px solid #f1f1f5;
         margin-top: 3px;
+    }
+
+    .table-wrap .row-actions {
+        gap: 6px;
+    }
+
+    .table-wrap .row-action {
+        display: grid;
+        place-items: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #e5e1f8;
+        border-radius: 8px;
+        background: #f7f5ff;
+        color: #6145d8;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    .table-wrap .row-action.delete {
+        border-color: #f3dada;
+        background: #fff5f5;
+        color: #c23c45;
+        font-size: 16px;
     }
 
     .table-wrap tbody td:nth-child(2)::before,
